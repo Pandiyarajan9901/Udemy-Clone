@@ -54,11 +54,13 @@ body {
 .navbar--s2 input:focus {
     outline: none;
 }
-.my-learning{
+
+.my-learning {
     position: relative;
     cursor: pointer;
 }
-.mylearning-popup{
+
+.mylearning-popup {
     position: absolute;
     background-color: white;
     border: solid black 1px;
@@ -68,9 +70,11 @@ body {
     right: 0;
     display: none;
 }
-.my-learning:hover .mylearning-popup{
+
+.my-learning:hover .mylearning-popup {
     display: block;
 }
+
 .navbar--s3 {
     display: flex;
     gap: 10px;
@@ -91,16 +95,48 @@ body {
     padding: 10px;
     border-radius: 30px;
     align-items: center;
+    cursor:pointer;
+    border: black solid 1px;
 }
-.saleimg img{position: relative;}
-.saleimg-offcer{width: 25%;
-padding: 2%;
-width: 35%;
-background-color: white;
-border: solid black 2px;
-position: absolute;
-top: 40%;
-left: 5%;}
+.Categries p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color:black;
+    border: black solid 1px;
+}
+
+
+.saleimg img {
+    position: relative;
+}
+
+.saleimg-offcer {
+    width: 25%;
+    padding: 2%;
+    width: 35%;
+    background-color: white;
+    border: solid black 2px;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    animation-name: zoom;
+    animation-duration: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+
+    }
+}
 
 .saleimg img {
     width: 100%;
