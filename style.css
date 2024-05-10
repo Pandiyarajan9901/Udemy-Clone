@@ -111,16 +111,15 @@ body {
 }
 
 .saleimg-offcer {
-    width: 25%;
     padding: 2%;
     width: 35%;
     background-color: white;
     border: solid black 2px;
     position: absolute;
-    top: 40%;
-    left: 5%;
+    top:20%;
+    left: 10%;
     animation-name: zoom;
-    animation-duration: 3s;
+    animation-duration: 2s;
     opacity: 0;
     animation-fill-mode: forwards;
 }
@@ -221,10 +220,12 @@ body {
     body{font-size: 10px;}
     
 }
+
+
 @media screen and (max-width:500px) {
    
     .course-card{
-        flex-basis: 10%;
+        flex-basis: 40%;
     }
 }
 @media screen and (max-width:500px) {
